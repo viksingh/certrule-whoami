@@ -1,0 +1,13 @@
+---
+applications:
+  - name: certrule-whoami
+    path: approuter
+    memory: 256M
+    disk_quota: 512M
+    buildpacks:
+      - nodejs_buildpack
+    random-route: true
+    services:
+      - whoami-xsuaa
+      - whoami-destination
+      - whoami-connectivity

@@ -1,0 +1,14 @@
+{
+  "name": "certrule-whoami-router",
+  "version": "1.0.0",
+  "description": "Approuter that forwards /whoami to the ABAP backend with principal propagation",
+  "scripts": {
+    "start": "node node_modules/@sap/approuter/approuter.js"
+  },
+  "dependencies": {
+    "@sap/approuter": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

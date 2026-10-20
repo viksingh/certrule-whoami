@@ -1,0 +1,19 @@
+{
+  "welcomeFile": "/whoami",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/whoami$",
+      "target": "/sap/bc/zpoc_whoami",
+      "destination": "A4H_PP",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/user-api(.*)",
+      "target": "$1",
+      "service": "sap-approuter-userapi",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}
